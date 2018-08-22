@@ -11,7 +11,7 @@ namespace Crud2
     class DAL
     {
         
-        MySqlConnection conexao = null;
+        MySqlConnection con = null;
         MySqlCommand comando;
 
 
@@ -19,8 +19,8 @@ namespace Crud2
         {
             try
             {
-                conexao = new MySqlConnection("server=localhost;user id=root;password=;persistsecurityinfo=True;database=escola;SslMode=none");
-                comando = new MySqlCommand("select * from aluno", conexao);
+                con = new MySqlConnection("server=localhost;user id=root;password=;persistsecurityinfo=True;database=escola;SslMode=none");
+                comando = new MySqlCommand("select * from aluno", con);
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da.SelectCommand = comando;
 
