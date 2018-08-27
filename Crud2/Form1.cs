@@ -15,6 +15,8 @@ namespace Crud2
         public Form1()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -42,6 +44,21 @@ namespace Crud2
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCelular_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

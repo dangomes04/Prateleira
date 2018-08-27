@@ -9,11 +9,33 @@ namespace Crud2
     class ClasseDTO
     {
         int codigo;
-        string sexo, nacionalidade, nome;
-        double peso;
+        string sexo, uf, nome, telefone, celular, bairro, cidade;        
         DateTime nascimento;
 
+        private string Telefone
+        {
+            get { return telefone; }
+            set { telefone = value; }
+        }
 
+        private string Celular
+        {
+            get { return celular; }
+            set { celular = value; }
+        }
+
+        private string Bairro
+        {
+            get { return bairro; }
+            set { bairro = value; }
+        }
+
+        private string Cidade
+        {
+            get { return bairro; }
+            set { bairro = value; }
+        }
+        
         private int Codigo
         {
             get { return codigo; }
@@ -26,22 +48,16 @@ namespace Crud2
             set { sexo = value; }
         }
 
-        private string Nacionalidade
+        private string UF
         {
-            get { return nacionalidade; }
-            set { nacionalidade = value; }
+            get { return uf; }
+            set { uf = value; }
         }
 
         private string Nome
         {
             get { return nome; }
             set { nome = value; }
-        }
-
-        private double Peso
-        {
-            get { return peso; }
-            set { peso = value; }
         }
 
         private DateTime Nascimento
